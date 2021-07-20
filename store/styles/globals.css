@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 980px;
+  margin: auto;
+}
+
+/* Button */
+
+.button {
+  display: block;
+  padding: 20px 0;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #e60012;
+}
+
+.button--primary:hover {
+  background-color: #f43543;
+}
+
+/* Nav | Tabs */
+
+.nav {
+  width: 980px;
+  margin: auto;
+}
+
+.nav .nav__link {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #333;
+  background-color: transparent;
+}
+
+.nav .nav__link:hover {
+  border-bottom-color: #f43543;
+}
+
+.tabs button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #333;
+  background-color: transparent;
+}
+
+.tabs button[aria-selected="true"] {
+  border-bottom-color: #f43543;
+}
+
+/* Products */
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 980px;
+  margin: 60px auto;
+}
+
+.product {
+  padding: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.product__name {
+  padding-top: 4px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Contact */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  margin: 60px auto;
+}
+
+.form__title {
+  padding: 12px 0;
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 4px solid #e60012;
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form__control label {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form__control input {
+  padding: 15px 10px;
+  font-size: 18px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.form__control input:focus {
+  border-color: #e60012;
+}
+
+.form > .button {
+  margin-top: 24px;
+}
